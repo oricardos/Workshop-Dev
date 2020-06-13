@@ -32,58 +32,98 @@
             </main>
 
             <section id="buttons">
-                <button>+ Adicionar ideia</button>
+                <button onclick="onOff()">+ Adicionar ideia</button>
                 <button class="fat">Ver ideia</button>
             </section>
 
-        
+
             <footer>Feito por <a href="#">oricardo.dev</a></footer>
-                     
+
         </section>
 
         <section id="last-ideas">
             <div class="idea">
-                <img src="https://image.flaticon.com/icons/svg/2729/2729007.svg" 
-                     alt="Imagem de Curso de Programação">
+                <img src="https://image.flaticon.com/icons/svg/2729/2729007.svg" alt="Imagem de Curso de Programação">
 
                 <div class="content">
                     <h3>Cursos de Programação</h3>
                     <p>Estudo</p>
                     <div class="description">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero sapiente inventore molestiae ipsum ab quos tenetur quidem soluta illum distinctio nulla eaque, incidunt, deserunt doloremque quo aperiam a. Commodi, cupiditate!
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero sapiente inventore molestiae ipsum
+                        ab quos tenetur quidem soluta illum distinctio nulla eaque, incidunt, deserunt doloremque quo
+                        aperiam a. Commodi, cupiditate!
                     </div>
                     <a href="#">Ir para a ideia!</a>
-                </div>     
+                </div>
             </div>
 
             <div class="idea">
-                <img src="https://image.flaticon.com/icons/svg/2729/2729027.svg" 
-                     alt="Imagem de Meditação">
+                <img src="https://image.flaticon.com/icons/svg/2729/2729027.svg" alt="Imagem de Meditação">
 
                 <div class="content">
                     <h3>Meditação</h3>
                     <p>Mentalidade</p>
                     <div class="description">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero sapiente inventore molestiae ipsum ab quos tenetur quidem soluta illum distinctio nulla eaque, incidunt, deserunt doloremque quo aperiam a. Commodi, cupiditate!
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero sapiente inventore molestiae ipsum
+                        ab quos tenetur quidem soluta illum distinctio nulla eaque, incidunt, deserunt doloremque quo
+                        aperiam a. Commodi, cupiditate!
                     </div>
                     <a href="#">Ir para a ideia!</a>
-                </div>     
+                </div>
             </div>
 
             <div class="idea">
-                <img src="https://image.flaticon.com/icons/svg/2729/2729013.svg" 
-                     alt="Imagem de Curso de Culinária">
+                <img src="https://image.flaticon.com/icons/svg/2729/2729013.svg" alt="Imagem de Curso de Culinária">
 
                 <div class="content">
                     <h3>Cursos de Culinária</h3>
                     <p>Alimentação</p>
                     <div class="description">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero sapiente inventore molestiae ipsum ab quos tenetur quidem soluta illum distinctio nulla eaque, incidunt, deserunt doloremque quo aperiam a. Commodi, cupiditate!
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero sapiente inventore molestiae ipsum
+                        ab quos tenetur quidem soluta illum distinctio nulla eaque, incidunt, deserunt doloremque quo
+                        aperiam a. Commodi, cupiditate!
                     </div>
                     <a href="#">Ir para a ideia!</a>
-                </div>     
+                </div>
             </div>
         </section>
+    </div>
+
+    <div id="modal" class="hide">
+        <div class="content">
+            <h1>Nova Ideia</h1>
+
+            <form action="">
+                <div class="input-wrapper">
+                    <label for="title">Título da ideia</label>
+                    <input type="text" name="title">
+                </div>
+
+                <div class="input-wrapper">
+                    <label for="category">Categoria</label>
+                    <input type="text" name="category">
+                </div>
+
+                <div class="input-wrapper">
+                    <label for="image">Link da imagem</label>
+                    <input type="url" name="image">
+                </div>
+
+                <div class="input-wrapper">
+                    <label for="description">Digite uma descrição para esta ideia</label>
+                    <textarea name="description" cols="30" rows="10"></textarea>
+                </div>
+
+                <div class="input-wrapper">
+                    <label for="link">Link da ideia</label>
+                    <input type="url" name="link">
+                </div>
+
+                <a href="#">Voltar</a>
+
+                <button>Salvar</button>
+            </form>
+        </div>
     </div>
 
 
