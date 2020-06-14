@@ -226,3 +226,74 @@ form button:hover {
     opacity: 0;
     visibility: hidden;
 }
+
+/* ideias */
+#page-ideas #container{
+    display: block;
+}
+
+#page-ideas header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#page-ideas nav {
+    display: flex;
+    align-items: center;
+}
+
+ #page-ideas nav li {
+    list-style: none;
+    margin: 0 8px;
+}
+
+#page-ideas nav li a {
+    color: #25282b;
+}
+
+#page-ideas nav li:last-child {
+    margin-right: 0;
+    background-color: #ff5e84;
+    height: 40px;
+    width: 150px;
+    border-radius: 8px;
+    border: solid 1px #ff5e84;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 400ms;
+}
+
+#page-ideas nav li:last-child:hover {
+    -webkit-box-shadow: 0px 18px 48px -12px rgba(255, 94, 132, 1);
+    -moz-box-shadow: 0px 18px 48px -12px rgba(255, 94, 132, 1);
+    box-shadow: 0px 18px 48px -12px rgba(255, 94, 132, 1);
+}
+
+#page-ideas nav li:last-child a {
+    color: #fff;    
+    font-size: 14px;
+    font-weight: bold;
+}
+
+section#title {
+    margin: 64px 0;
+    text-align: center;
+}
+
+section#title p {
+    opacity: 0.7;
+    margin: 0;
+}
+
+section#title  h1{
+    margin: 0;
+    font-size: 28px;
+}
+
+section#ideas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px
+}
