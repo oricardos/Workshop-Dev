@@ -8,15 +8,44 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+body.hideScroll {
+    overflow: hidden;
+}
+
 a {
     color: #ff5e84;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 700;
 }
 
 a:hover {
     text-decoration: underline;
 }
+
+.button {
+    font-size: 14px;
+    background: #ff5e84;
+    color: #fff;
+    width: 150px;
+    height: 40px;
+    border-radius: 8px;
+    border: solid 1px #ff5e84;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 400ms;
+}
+
+.button:hover {
+    cursor: pointer;
+    text-decoration: none;
+    -webkit-box-shadow: 0px 18px 48px -12px rgba(255, 94, 132, 1);
+    -moz-box-shadow: 0px 18px 48px -12px rgba(255, 94, 132, 1);
+    box-shadow: 0px 18px 48px -12px rgba(255, 94, 132, 1);
+}
+
+
+/**/
 
 #container {
     width: 90%;
@@ -28,7 +57,7 @@ a:hover {
 
 #intro {
     width: 300px;
-    margin-right: 20px;
+    margin-right: 64px;
 }
 
 main {
@@ -62,21 +91,6 @@ button {
 
 button:hover {
     text-decoration: underline;
-}
-
-button.fat {
-    background: #ff5e84;
-    color: #e5e5e5;
-    width: 150px;
-    height: 40px;
-    border-radius: 8px;
-    -webkit-box-shadow: 0px 18px 48px -12px rgba(255, 94, 132, 1);
-    -moz-box-shadow: 0px 18px 48px -12px rgba(255, 94, 132, 1);
-    box-shadow: 0px 18px 48px -12px rgba(255, 94, 132, 1);
-}
-
-button.fat:hover {
-    text-decoration: none;
 }
 
 #buttons,
@@ -131,15 +145,22 @@ footer a {
 .idea a {
     font-size: 15px;
 }
+
+
 #modal {
     background-color: rgba(255, 94, 132, 1);
     position: absolute;
     top: 0;
-    width: 100%;
-    height: 100vh;
+    bottom: 0;
+    right: 0;
+    left: 0;
     display: flex;
     justify-content: center;
     transition: 400ms;
+}
+
+#modal.addScroll {
+    overflow: auto;
 }
 
 #modal .content {
@@ -252,33 +273,15 @@ form button:hover {
     color: #25282b;
 }
 
+#page-ideas nav li a.button {
+    color: #fff;
+}
+
 #page-ideas nav li:last-child {
     margin-right: 0;
-    background-color: #ff5e84;
-    height: 40px;
-    width: 150px;
-    border-radius: 8px;
-    border: solid 1px #ff5e84;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: 400ms;
-}
-
-#page-ideas nav li:last-child:hover {
-    -webkit-box-shadow: 0px 18px 48px -12px rgba(255, 94, 132, 1);
-    -moz-box-shadow: 0px 18px 48px -12px rgba(255, 94, 132, 1);
-    box-shadow: 0px 18px 48px -12px rgba(255, 94, 132, 1);
-}
-
-#page-ideas nav li:last-child a {
-    color: #fff;    
-    font-size: 14px;
-    font-weight: bold;
 }
 
 section#title {
-    margin: 64px 0;
     text-align: center;
 }
 
@@ -300,4 +303,10 @@ section#ideas {
 
 section#ideas .idea {
     margin: 0;
+}
+
+section#title,
+section#ideas,
+footer {
+    margin-top: 64px;
 }
