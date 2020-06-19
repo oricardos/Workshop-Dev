@@ -149,7 +149,7 @@ footer a {
 
 #modal {
     background-color: rgba(255, 94, 132, 1);
-    position: absolute;
+    position: fixed;
     top: 0;
     bottom: 0;
     right: 0;
