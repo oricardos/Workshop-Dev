@@ -40,31 +40,31 @@ server.use(express.static("public"))
 const nunjucks = require("nunjucks")
 nunjucks.configure("views", {
     express: server,
-    noCache: true, 
+    noCache: true,
 })
 
 
 //criação de rota /
 //e pego o pedido do cliente para responder
-server.get("/", function(req, res){
+server.get("/", function (req, res) {
 
     const reversedIdeas = [...ideas].reverse()
 
     let lastIdeas = []
     for (let idea of reversedIdeas) {
-        if (lastIdeas.length < 3){
+        if (lastIdeas.length < 3) {
             lastIdeas.push(idea)
-        }       
+        }
     }
 
     return res.render("index.html", { ideas: lastIdeas })
 })
 
-server.get("/ideas", function(req, res){
-    
+server.get("/ideas", function (req, res) {
+
     const reversedIdeas = [...ideas].reverse()
 
-    return res.render("ideas.html", {ideas: reversedIdeas})
+    return res.render("ideas.html", { ideas: reversedIdeas })
 })
 
 //server ligado na porta 3000
